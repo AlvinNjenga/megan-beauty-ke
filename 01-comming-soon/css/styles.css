@@ -96,8 +96,8 @@ b.light-color{ color: #444; }
 
 .position-static{ position: static; }
 
-
-.main-area{ position: relative; height: 100vh;  }
+/* ALVIN: Edited for background color */
+.main-area{ position: relative; height: 100vh; background-color: #ffc2e8;  }
 
 
 /* ---------------------------------
@@ -106,7 +106,7 @@ b.light-color{ color: #444; }
 
 .left-section{ float: left; width: 50%; position: relative; }
 
-.left-section .logo{ position: absolute; top: 40px; height: 30px; }
+.left-section .logo{ position: absolute; top: 40px; height: 120px; }
 
 .left-section .logo img{ height: 100%; width: auto; } 
 
@@ -130,7 +130,7 @@ b.light-color{ color: #444; }
 .main-content .email-input-area .submit-btn:hover{ background: #e40b52; }
 
 
-.main-content .post-desc{ color: #999; }
+.main-content .post-desc{ color: #F84982; font-weight: semi-bold; font-size: .9em; letter-spacing: 1px; }
 
 
 .left-section .footer-icons{ position: absolute; bottom: 30px;}
