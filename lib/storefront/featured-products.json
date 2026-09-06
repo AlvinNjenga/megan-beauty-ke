@@ -1,0 +1,187 @@
+{
+    "products":  {
+                     "glow-oil":  {
+                                      "slug":  "glow-oil",
+                                      "title":  "Glow Oil",
+                                      "image":  "/images/olivelle/products/glow-oil.webp",
+                                      "href":  "https://flux-demo-6.myshopify.com/products/glow-oil",
+                                      "price":  980,
+                                      "compareAt":  1890,
+                                      "currency":  "EUR",
+                                      "fromPrice":  true,
+                                      "isNew":  false,
+                                      "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/product-1.png?v=1772555952"
+                                  },
+                     "radiance-oil":  {
+                                          "slug":  "radiance-oil",
+                                          "title":  "Radiance Oil",
+                                          "image":  "/images/olivelle/products/radiance-oil.webp",
+                                          "href":  "https://flux-demo-6.myshopify.com/products/radiance-oil",
+                                          "price":  790,
+                                          "compareAt":  null,
+                                          "currency":  "EUR",
+                                          "fromPrice":  true,
+                                          "isNew":  true,
+                                          "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/product-3.png?v=1772556287"
+                                      },
+                     "facial-ice-globes":  {
+                                               "slug":  "facial-ice-globes",
+                                               "title":  "Facial ice globes",
+                                               "image":  "/images/olivelle/products/facial-ice-globes.webp",
+                                               "href":  "https://flux-demo-6.myshopify.com/products/facial-ice-globes",
+                                               "price":  1399,
+                                               "compareAt":  null,
+                                               "currency":  "EUR",
+                                               "fromPrice":  false,
+                                               "isNew":  false,
+                                               "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/self-care-2-a.webp?v=1772788710"
+                                           },
+                     "complete-self-care-beauty-gift-set":  {
+                                                                "slug":  "complete-self-care-beauty-gift-set",
+                                                                "title":  "Complete Self-Care Beauty Gift Set",
+                                                                "image":  "/images/olivelle/products/complete-self-care-beauty-gift-set.webp",
+                                                                "href":  "https://flux-demo-6.myshopify.com/products/complete-self-care-beauty-gift-set",
+                                                                "price":  32900,
+                                                                "compareAt":  null,
+                                                                "currency":  "EUR",
+                                                                "fromPrice":  false,
+                                                                "isNew":  false,
+                                                                "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/beauty-set-4.webp?v=1772791378"
+                                                            },
+                     "repair-oil":  {
+                                        "slug":  "repair-oil",
+                                        "title":  "Repair Oil",
+                                        "image":  "/images/olivelle/products/repair-oil.webp",
+                                        "href":  "https://flux-demo-6.myshopify.com/products/repair-oil",
+                                        "price":  990,
+                                        "compareAt":  2590,
+                                        "currency":  "EUR",
+                                        "fromPrice":  true,
+                                        "isNew":  false,
+                                        "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/product-4_d23bf70f-0934-4747-94c2-74ddc3076dd8.png?v=1772557850"
+                                    },
+                     "brightening-oil":  {
+                                             "slug":  "brightening-oil",
+                                             "title":  "Brightening Oil",
+                                             "image":  "/images/olivelle/products/brightening-oil.webp",
+                                             "href":  "https://flux-demo-6.myshopify.com/products/brightening-oil",
+                                             "price":  1190,
+                                             "compareAt":  null,
+                                             "currency":  "EUR",
+                                             "fromPrice":  true,
+                                             "isNew":  false,
+                                             "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/face-oil-6.webp?v=1772618495"
+                                         },
+                     "nourishing-oil":  {
+                                            "slug":  "nourishing-oil",
+                                            "title":  "Nourishing Oil",
+                                            "image":  "/images/olivelle/products/nourishing-oil.webp",
+                                            "href":  "https://flux-demo-6.myshopify.com/products/nourishing-oil",
+                                            "price":  990,
+                                            "compareAt":  2290,
+                                            "currency":  "EUR",
+                                            "fromPrice":  true,
+                                            "isNew":  false,
+                                            "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/face-oil-7.webp?v=1772618581"
+                                        },
+                     "ultimate-glow-self-care-beauty-set":  {
+                                                                "slug":  "ultimate-glow-self-care-beauty-set",
+                                                                "title":  "Ultimate Glow Self-Care Beauty Set",
+                                                                "image":  "/images/olivelle/products/ultimate-glow-self-care-beauty-set.webp",
+                                                                "href":  "https://flux-demo-6.myshopify.com/products/ultimate-glow-self-care-beauty-set",
+                                                                "price":  31999,
+                                                                "compareAt":  null,
+                                                                "currency":  "EUR",
+                                                                "fromPrice":  false,
+                                                                "isNew":  false,
+                                                                "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/beauty-set-6.webp?v=1772811932"
+                                                            },
+                     "detox-oil":  {
+                                       "slug":  "detox-oil",
+                                       "title":  "Peptide Lift Oil",
+                                       "image":  "/images/olivelle/products/detox-oil.webp",
+                                       "href":  "https://flux-demo-6.myshopify.com/products/detox-oil",
+                                       "price":  990,
+                                       "compareAt":  2190,
+                                       "currency":  "EUR",
+                                       "fromPrice":  true,
+                                       "isNew":  false,
+                                       "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/face-oil-8.webp?v=1772618755"
+                                   },
+                     "facial-roler":  {
+                                          "slug":  "facial-roler",
+                                          "title":  "Facial Roler",
+                                          "image":  "/images/olivelle/products/facial-roler.webp",
+                                          "href":  "https://flux-demo-6.myshopify.com/products/facial-roler",
+                                          "price":  3900,
+                                          "compareAt":  null,
+                                          "currency":  "EUR",
+                                          "fromPrice":  true,
+                                          "isNew":  false,
+                                          "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/face-tools-1.webp?v=1772707524"
+                                      },
+                     "facial-cleansing-brush":  {
+                                                    "slug":  "facial-cleansing-brush",
+                                                    "title":  "Facial Cleansing Brush",
+                                                    "image":  "/images/olivelle/products/facial-cleansing-brush.webp",
+                                                    "href":  "https://flux-demo-6.myshopify.com/products/facial-cleansing-brush",
+                                                    "price":  5999,
+                                                    "compareAt":  null,
+                                                    "currency":  "EUR",
+                                                    "fromPrice":  true,
+                                                    "isNew":  false,
+                                                    "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/face-tools-3-a.webp?v=1772719863"
+                                                },
+                     "balance-oil":  {
+                                         "slug":  "balance-oil",
+                                         "title":  "Balance Oil",
+                                         "image":  "/images/olivelle/products/balance-oil.webp",
+                                         "href":  "https://flux-demo-6.myshopify.com/products/balance-oil",
+                                         "price":  990,
+                                         "compareAt":  null,
+                                         "currency":  "EUR",
+                                         "fromPrice":  true,
+                                         "isNew":  false,
+                                         "sourceImage":  "https://cdn.shopify.com/s/files/1/0982/8699/3792/files/product-2.png?v=1772556078"
+                                     }
+                 },
+    "groups":  [
+                   {
+                       "slug":  "facial-oils",
+                       "title":  "Facial Oils",
+                       "productIds":  [
+                                          "radiance-oil",
+                                          "balance-oil",
+                                          "repair-oil",
+                                          "detox-oil",
+                                          "brightening-oil",
+                                          "glow-oil",
+                                          "nourishing-oil"
+                                      ]
+                   },
+                   {
+                       "slug":  "new-arrivals",
+                       "title":  "New Arrivals",
+                       "productIds":  [
+                                          "detox-oil",
+                                          "facial-roler",
+                                          "ultimate-glow-self-care-beauty-set",
+                                          "radiance-oil",
+                                          "balance-oil"
+                                      ]
+                   },
+                   {
+                       "slug":  "best-sellers",
+                       "title":  "Best Sellers",
+                       "productIds":  [
+                                          "radiance-oil",
+                                          "facial-roler",
+                                          "balance-oil",
+                                          "glow-oil",
+                                          "facial-cleansing-brush",
+                                          "facial-ice-globes",
+                                          "complete-self-care-beauty-gift-set"
+                                      ]
+                   }
+               ]
+}
