@@ -62,7 +62,7 @@ export function ScrollRail({ children, label, controlLabel = "collections", clas
         id={id}
         ref={railRef}
         aria-label={label}
-        className={cn("scrollbar-none flex snap-x snap-mandatory scroll-px-5 gap-3 overflow-x-auto overscroll-x-contain px-5 py-1 lg:scroll-px-[3vw] lg:gap-[1.4vw] lg:px-[3%]", className)}
+        className={cn("relative scrollbar-none flex snap-x snap-mandatory scroll-px-5 gap-3 overflow-x-auto overscroll-x-contain px-5 py-1 lg:scroll-px-[3vw] lg:gap-[1.4vw] lg:px-[3%]", className)}
       >
         {children}
       </ul>

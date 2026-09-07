@@ -1,3 +1,10 @@
+import { CuratedSelfCare } from "@/components/storefront/curated-self-care";
+import { MostLovedPromotions } from "@/components/storefront/most-loved-promotions";
+import { CategorySpotlight } from "@/components/storefront/category-spotlight";
+import { FeatureStrip } from "@/components/storefront/feature-strip";
+import { ImageTextSection } from "@/components/storefront/image-text-section";
+import { facialOilSpotlight, skincareFeatures, skincareStory } from "@/lib/storefront/story-content";
+import { featuredCollections } from "@/lib/storefront/products";
 import { EditorialStatement } from "@/components/storefront/editorial-statement";
 import { FeaturedProducts } from "@/components/storefront/featured-products";
 import { CollectionRail } from "@/components/storefront/collection-rail";
@@ -18,6 +25,11 @@ export default function Home() {
           <CollectionRail collections={collections} />
           <EditorialStatement />
           <FeaturedProducts />
+          <ImageTextSection {...skincareStory} />
+          <FeatureStrip features={skincareFeatures} />
+          <CategorySpotlight {...facialOilSpotlight} products={featuredCollections.find((collection) => collection.slug === "facial-oils")?.products ?? []} />
+          <MostLovedPromotions />
+          <CuratedSelfCare />
         </main>
       </div>
     </>
