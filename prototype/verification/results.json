@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "viewports": [
+    1440,
+    1280,
+    768,
+    390,
+    320
+  ],
+  "checks": [
+    "direct routes",
+    "image loading",
+    "navigation",
+    "type and price filters",
+    "sorting",
+    "gallery",
+    "variants",
+    "basket quantity and subtotal",
+    "checkout boundary",
+    "search",
+    "newsletter",
+    "mobile navigation",
+    "overflow",
+    "404"
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+}
