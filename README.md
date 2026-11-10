@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Megan Beauty
 
-## Getting Started
+A React and TypeScript portfolio storefront based on the [design prototype](prototype/README.md). The catalogue, photography and founder story are sample content. Search, Saved, the bag and newsletter feedback are browser-only demonstrations. The bag and Saved reset on refresh.
 
-First, run the development server:
+## Develop locally
 
-```bash
+Use Node.js 24 or later.
+
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the URL printed by Vite, including the `/megan-beauty-ke/` prefix.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The root `index.html` is Vite's source entry point. Opening it from File Explorer uses `file://`, which blocks browser module loading. Use the Vite URL for development and the preview URL below for the production build.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build and verify
 
-## Learn More
+```sh
+npm run typecheck
+npm run build
+npm run preview
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:4173/megan-beauty-ke/](http://localhost:4173/megan-beauty-ke/) or the URL Vite prints if it selects a different port. The generated `dist/index.html` also needs to be served over HTTP or HTTPS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The build renders the homepage, Our World, eight collections, eight products and a custom 404 to HTML in `dist/`. React hydrates those pages and handles in-site navigation. A product or collection can be opened or refreshed directly on a static host.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run the production browser checks and capture screenshots in `verification/react/`:
 
-## Deploy on Vercel
+```sh
+npx playwright install chromium
+npm run verify
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Set `PLAYWRIGHT_CHANNEL=chrome` to use an existing Chrome installation. The verifier serves `dist/` at the repository subpath and compares screenshots if matching captures exist in `verification/baseline/`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy to GitHub Pages
+
+Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The [Pages workflow](.github/workflows/pages.yml) builds and deploys on pushes to `main` or when run manually. The expected project URL is [alvinnjenga.github.io/megan-beauty-ke](https://alvinnjenga.github.io/megan-beauty-ke/). If the repository slug or hosting path changes, update `base` in `vite.config.ts`.
