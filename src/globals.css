@@ -254,8 +254,7 @@ a:hover {
 .desktop-nav button:hover {
   color: #9c286e;
 }
-.mobile-only,
-.mobile-search {
+.mobile-only {
   display: none;
 }
 .mega-menu {
@@ -1383,7 +1382,7 @@ select {
   }
   .header-main {
     height: 86px;
-    grid-template-columns: 44px minmax(80px, 1fr) auto;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
     padding: 0 12px;
   }
   .header .logo-crop {
@@ -1419,11 +1418,11 @@ select {
     height: 18px;
     font-size: 12px;
   }
-  .mobile-only,
-  .mobile-search {
+  .mobile-only {
     display: inline-flex;
   }
   .search-trigger,
+  .saved-trigger,
   .desktop-nav,
   .account-button {
     display: none;

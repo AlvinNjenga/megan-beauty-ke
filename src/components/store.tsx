@@ -155,13 +155,6 @@ export function StoreShell({ children }: { children: React.ReactNode }) {
           </Link>
           <div className="header-actions">
             <button
-              className="icon-button mobile-search"
-              aria-label="Search"
-              onClick={() => setPanel("search")}
-            >
-              <Search />
-            </button>
-            <button
               className="icon-button saved-trigger"
               aria-label={`Saved edit, ${saved.length} items`}
               onClick={() => setPanel("saved")}
@@ -581,6 +574,12 @@ function Panels() {
         </div>
         {panel === "menu" ? (
           <nav className="mobile-nav" aria-label="Mobile navigation">
+            <button onClick={() => setPanel("search")}>
+              Search products
+            </button>
+            <button onClick={() => setPanel("saved")}>
+              Your saved edit ({saved.length})
+            </button>
             {collections.map((c) => (
               <Link
                 onClick={() => setPanel(null)}
@@ -594,9 +593,6 @@ function Panels() {
             <Link to="/our-world" onClick={() => setPanel(null)}>
               Our world
             </Link>
-            <button onClick={() => setPanel("saved")}>
-              Your saved edit ({saved.length})
-            </button>
             <button onClick={() => setPanel("account")}>Your account</button>
           </nav>
         ) : panel === "search" ? (
