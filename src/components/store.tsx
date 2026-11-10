@@ -102,10 +102,10 @@ export function Logo() {
   return (
     <span className="logo-crop">
       <img
-        src={`${import.meta.env.BASE_URL}images/mb-logo-white.png`}
+        src={`${import.meta.env.BASE_URL}images/mb-logo-transparent.png`}
         alt="Megan Beauty"
-        width="6250"
-        height="6250"
+        width="1254"
+        height="1254"
       />
     </span>
   );
