@@ -1,6 +1,6 @@
 # Megan Beauty
 
-A React and TypeScript portfolio storefront based on the [design prototype](prototype/README.md). The catalogue, photography and founder story are sample content. Search, Saved, the bag and newsletter feedback are browser-only demonstrations. The bag and Saved reset on refresh.
+A React and TypeScript portfolio storefront based on the original design prototype. The catalogue, photography and founder story are sample content. Search, Saved, the bag and newsletter feedback are browser-only demonstrations. The bag and Saved reset on refresh.
 
 ## Develop locally
 
