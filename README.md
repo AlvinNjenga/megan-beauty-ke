@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open the URL printed by Vite, including the `/megan-beauty-ke/` prefix.
+Open the URL printed by Vite. The site is served at the root path `/`.
 
 The root `index.html` is Vite's source entry point. Opening it from File Explorer uses `file://`, which blocks browser module loading. Use the Vite URL for development and the preview URL below for the production build.
 
@@ -23,7 +23,7 @@ npm run build
 npm run preview
 ```
 
-Open [http://localhost:4173/megan-beauty-ke/](http://localhost:4173/megan-beauty-ke/) or the URL Vite prints if it selects a different port. The generated `dist/index.html` also needs to be served over HTTP or HTTPS.
+Open [http://localhost:4173/](http://localhost:4173/) or the URL Vite prints if it selects a different port. The generated `dist/index.html` also needs to be served over HTTP or HTTPS.
 
 The build renders the homepage, Our World, eight collections, eight products and a custom 404 to HTML in `dist/`. React hydrates those pages and handles in-site navigation. A product or collection can be opened or refreshed directly on a static host.
 
@@ -34,8 +34,10 @@ npx playwright install chromium
 npm run verify
 ```
 
-Set `PLAYWRIGHT_CHANNEL=chrome` to use an existing Chrome installation. The verifier serves `dist/` at the repository subpath and compares screenshots if matching captures exist in `verification/baseline/`.
+Set `PLAYWRIGHT_CHANNEL=chrome` to use an existing Chrome installation. The verifier serves `dist/` at the configured Vite base path and compares screenshots if matching captures exist in `verification/baseline/`.
 
 ## Deploy to GitHub Pages
 
-Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The [Pages workflow](.github/workflows/pages.yml) builds and deploys on pushes to `main` or when run manually. The expected project URL is [alvinnjenga.github.io/megan-beauty-ke](https://alvinnjenga.github.io/megan-beauty-ke/). If the repository slug or hosting path changes, update `base` in `vite.config.ts`.
+Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The [Pages workflow](.github/workflows/pages.yml) builds and deploys on pushes to `main` or when run manually. The production URL is [megynbeauty.co.ke](https://megynbeauty.co.ke/), with `base: "/"` in `vite.config.ts`.
+
+Set **Settings → Pages → Custom domain** to `megynbeauty.co.ke` before pointing the domain's DNS at GitHub Pages. DNS is managed separately with the domain provider. With this custom GitHub Actions workflow, a repository `CNAME` file is not required. Enable **Enforce HTTPS** once GitHub makes it available.
